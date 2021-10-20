@@ -1,0 +1,1820 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr">
+ <head> 
+  <link href="https://www.blogger.com/static/v1/widgets/1394523530-widget_css_bundle.css" rel="stylesheet" type="text/css"> 
+  <link href="https://i.imgur.com/01gikK4.png" rel="icon" type="image/x-icon"> 
+  <meta content="width=device-width, initial-scale=1" name="viewport"> 
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> 
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" rel="stylesheet"> 
+  <title>
+Lê Anh Đức | Chúc Mừng Sinh Nhật (Dark Mode)
+</title> 
+  <style>
+.has-error .help-block{color:#a94442}
+.has-error .form-control:focus{color:#495057;background-color:#fff;border-color:#a94442;outline:0;box-shadow:0 0 0 .2rem #ce8483}
+.show{display:block!important;}
+.help-block {display:block;margin-top:5px;margin-bottom:10px;color:#737373}
+.sweet-alert .sa-icon.sa-custom{border-radius:50%}
+.text-danger{font-size:11px}
+</style> 
+  <style>
+@keyframes showSweetAlert {
+  0% {
+    transform: scale(0.7);
+  }
+  45% {
+    transform: scale(1.05);
+  }
+  80% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes hideSweetAlert {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.5);
+  }
+}
+@keyframes slideFromTop {
+  0% {
+    top: 0%;
+  }
+  100% {
+    top: 50%;
+  }
+}
+@keyframes slideToTop {
+  0% {
+    top: 50%;
+  }
+  100% {
+    top: 0%;
+  }
+}
+@keyframes slideFromBottom {
+  0% {
+    top: 70%;
+  }
+  100% {
+    top: 50%;
+  }
+}
+@keyframes slideToBottom {
+  0% {
+    top: 50%;
+  }
+  100% {
+    top: 70%;
+  }
+}
+.showSweetAlert {
+  animation: showSweetAlert 0.3s;
+}
+.showSweetAlert[data-animation=none] {
+  animation: none;
+}
+.showSweetAlert[data-animation=slide-from-top] {
+  animation: slideFromTop 0.3s;
+}
+.showSweetAlert[data-animation=slide-from-bottom] {
+  animation: slideFromBottom 0.3s;
+}
+.hideSweetAlert {
+  animation: hideSweetAlert 0.3s;
+}
+.hideSweetAlert[data-animation=none] {
+  animation: none;
+}
+.hideSweetAlert[data-animation=slide-from-top] {
+  animation: slideToTop 0.3s;
+}
+.hideSweetAlert[data-animation=slide-from-bottom] {
+  animation: slideToBottom 0.3s;
+}
+@keyframes animateSuccessTip {
+  0% {
+    width: 0;
+    left: 1px;
+    top: 19px;
+  }
+  54% {
+    width: 0;
+    left: 1px;
+    top: 19px;
+  }
+  70% {
+    width: 50px;
+    left: -8px;
+    top: 37px;
+  }
+  84% {
+    width: 17px;
+    left: 21px;
+    top: 48px;
+  }
+  100% {
+    width: 25px;
+    left: 14px;
+    top: 45px;
+  }
+}
+@keyframes animateSuccessLong {
+  0% {
+    width: 0;
+    right: 46px;
+    top: 54px;
+  }
+  65% {
+    width: 0;
+    right: 46px;
+    top: 54px;
+  }
+  84% {
+    width: 55px;
+    right: 0px;
+    top: 35px;
+  }
+  100% {
+    width: 47px;
+    right: 8px;
+    top: 38px;
+  }
+}
+@keyframes rotatePlaceholder {
+  0% {
+    transform: rotate(-45deg);
+  }
+  5% {
+    transform: rotate(-45deg);
+  }
+  12% {
+    transform: rotate(-405deg);
+  }
+  100% {
+    transform: rotate(-405deg);
+  }
+}
+.animateSuccessTip {
+  animation: animateSuccessTip 0.75s;
+}
+.animateSuccessLong {
+  animation: animateSuccessLong 0.75s;
+}
+.sa-icon.sa-success.animate::after {
+  animation: rotatePlaceholder 4.25s ease-in;
+}
+@keyframes animateErrorIcon {
+  0% {
+    transform: rotateX(100deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+}
+.animateErrorIcon {
+  animation: animateErrorIcon 0.5s;
+}
+@keyframes animateXMark {
+  0% {
+    transform: scale(0.4);
+    margin-top: 26px;
+    opacity: 0;
+  }
+  50% {
+    transform: scale(0.4);
+    margin-top: 26px;
+    opacity: 0;
+  }
+  80% {
+    transform: scale(1.15);
+    margin-top: -6px;
+  }
+  100% {
+    transform: scale(1);
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+.animateXMark {
+  animation: animateXMark 0.5s;
+}
+@keyframes pulseWarning {
+  0% {
+    border-color: #F8D486;
+  }
+  100% {
+    border-color: #F8BB86;
+  }
+}
+.pulseWarning {
+  animation: pulseWarning 0.75s infinite alternate;
+}
+@keyframes pulseWarningIns {
+  0% {
+    background-color: #F8D486;
+  }
+  100% {
+    background-color: #F8BB86;
+  }
+}
+.pulseWarningIns {
+  animation: pulseWarningIns 0.75s infinite alternate;
+}
+@keyframes rotate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+body.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+.sweet-overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: none;
+  z-index: 1040;
+}
+.sweet-alert {
+  background-color: #ffffff;
+  width: 478px;
+  padding: 17px;
+  border-radius: 5px;
+  text-align: center;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -256px;
+  margin-top: -200px;
+  overflow: hidden;
+  display: none;
+  z-index: 2000;
+}
+@media all and (max-width: 767px) {
+  .sweet-alert {
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+    left: 15px;
+    right: 15px;
+  }
+}
+.sweet-alert .form-group {
+  display: none;
+}
+.sweet-alert .form-group .sa-input-error {
+  display: none;
+}
+.sweet-alert.show-input .form-group {
+  display: block;
+}
+.sweet-alert .sa-confirm-button-container {
+  display: inline-block;
+  position: relative;
+}
+.sweet-alert .la-ball-fall {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -27px;
+  margin-top: -9px;
+  opacity: 0;
+  visibility: hidden;
+}
+.sweet-alert button[disabled] {
+  opacity: .6;
+  cursor: default;
+}
+.sweet-alert button.confirm[disabled] {
+  color: transparent;
+}
+.sweet-alert button.confirm[disabled] ~ .la-ball-fall {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
+}
+.sweet-alert .sa-icon {
+  width: 80px;
+  height: 80px;
+  border: 4px solid gray;
+  border-radius: 50%;
+  margin: 20px auto;
+  position: relative;
+  box-sizing: content-box;
+}
+.sweet-alert .sa-icon.sa-error {
+  border-color: #d43f3a;
+}
+.sweet-alert .sa-icon.sa-error .sa-x-mark {
+  position: relative;
+  display: block;
+}
+.sweet-alert .sa-icon.sa-error .sa-line {
+  position: absolute;
+  height: 5px;
+  width: 47px;
+  background-color: #d9534f;
+  display: block;
+  top: 37px;
+  border-radius: 2px;
+}
+.sweet-alert .sa-icon.sa-error .sa-line.sa-left {
+  transform: rotate(45deg);
+  left: 17px;
+}
+.sweet-alert .sa-icon.sa-error .sa-line.sa-right {
+  transform: rotate(-45deg);
+  right: 16px;
+}
+.sweet-alert .sa-icon.sa-warning {
+  border-color: #eea236;
+}
+.sweet-alert .sa-icon.sa-warning .sa-body {
+  position: absolute;
+  width: 5px;
+  height: 47px;
+  left: 50%;
+  top: 10px;
+  border-radius: 2px;
+  margin-left: -2px;
+  background-color: #f0ad4e;
+}
+.sweet-alert .sa-icon.sa-warning .sa-dot {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin-left: -3px;
+  left: 50%;
+  bottom: 10px;
+  background-color: #f0ad4e;
+}
+.sweet-alert .sa-icon.sa-info {
+  border-color: #46b8da;
+}
+.sweet-alert .sa-icon.sa-info::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 29px;
+  left: 50%;
+  bottom: 17px;
+  border-radius: 2px;
+  margin-left: -2px;
+  background-color: #5bc0de;
+}
+.sweet-alert .sa-icon.sa-info::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin-left: -3px;
+  top: 19px;
+  background-color: #5bc0de;
+}
+.sweet-alert .sa-icon.sa-success {
+  border-color: #4cae4c;
+}
+.sweet-alert .sa-icon.sa-success::before,
+.sweet-alert .sa-icon.sa-success::after {
+  content: '';
+  border-radius: 50%;
+  position: absolute;
+  width: 60px;
+  height: 120px;
+  background: #ffffff;
+  transform: rotate(45deg);
+}
+.sweet-alert .sa-icon.sa-success::before {
+  border-radius: 120px 0 0 120px;
+  top: -7px;
+  left: -33px;
+  transform: rotate(-45deg);
+  transform-origin: 60px 60px;
+}
+.sweet-alert .sa-icon.sa-success::after {
+  border-radius: 0 120px 120px 0;
+  top: -11px;
+  left: 30px;
+  transform: rotate(-45deg);
+  transform-origin: 0px 60px;
+}
+.sweet-alert .sa-icon.sa-success .sa-placeholder {
+  width: 80px;
+  height: 80px;
+  border: 4px solid rgba(92, 184, 92, 0.2);
+  border-radius: 50%;
+  box-sizing: content-box;
+  position: absolute;
+  left: -4px;
+  top: -4px;
+  z-index: 2;
+}
+.sweet-alert .sa-icon.sa-success .sa-fix {
+  width: 5px;
+  height: 90px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 28px;
+  top: 8px;
+  z-index: 1;
+  transform: rotate(-45deg);
+}
+.sweet-alert .sa-icon.sa-success .sa-line {
+  height: 5px;
+  background-color: #5cb85c;
+  display: block;
+  border-radius: 2px;
+  position: absolute;
+  z-index: 2;
+}
+.sweet-alert .sa-icon.sa-success .sa-line.sa-tip {
+  width: 25px;
+  left: 14px;
+  top: 46px;
+  transform: rotate(45deg);
+}
+.sweet-alert .sa-icon.sa-success .sa-line.sa-long {
+  width: 47px;
+  right: 8px;
+  top: 38px;
+  transform: rotate(-45deg);
+}
+.sweet-alert .sa-icon.sa-custom {
+  background-size: contain;
+  border-radius: 0;
+  border: none;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.sweet-alert .btn-default:focus {
+  border-color: #cccccc;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(204, 204, 204, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(204, 204, 204, 0.6);
+}
+.sweet-alert .btn-success:focus {
+  border-color: #4cae4c;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(76, 174, 76, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(76, 174, 76, 0.6);
+}
+.sweet-alert .btn-info:focus {
+  border-color: #46b8da;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(70, 184, 218, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(70, 184, 218, 0.6);
+}
+.sweet-alert .btn-danger:focus {
+  border-color: #d43f3a;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(212, 63, 58, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(212, 63, 58, 0.6);
+}
+.sweet-alert .btn-warning:focus {
+  border-color: #eea236;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(238, 162, 54, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(238, 162, 54, 0.6);
+}
+.sweet-alert button::-moz-focus-inner {
+  border: 0;
+}
+.la-ball-fall,
+.la-ball-fall > div {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.la-ball-fall {
+  display: block;
+  font-size: 0;
+  color: #fff;
+}
+.la-ball-fall.la-dark {
+  color: #333;
+}
+.la-ball-fall > div {
+  display: inline-block;
+  float: none;
+  background-color: currentColor;
+  border: 0 solid currentColor;
+}
+.la-ball-fall {
+  width: 54px;
+  height: 18px;
+}
+.la-ball-fall > div {
+  width: 10px;
+  height: 10px;
+  margin: 4px;
+  border-radius: 100%;
+  opacity: 0;
+  -webkit-animation: ball-fall 1s ease-in-out infinite;
+  -moz-animation: ball-fall 1s ease-in-out infinite;
+  -o-animation: ball-fall 1s ease-in-out infinite;
+  animation: ball-fall 1s ease-in-out infinite;
+}
+.la-ball-fall > div:nth-child(1) {
+  -webkit-animation-delay: -200ms;
+  -moz-animation-delay: -200ms;
+  -o-animation-delay: -200ms;
+  animation-delay: -200ms;
+}
+.la-ball-fall > div:nth-child(2) {
+  -webkit-animation-delay: -100ms;
+  -moz-animation-delay: -100ms;
+  -o-animation-delay: -100ms;
+  animation-delay: -100ms;
+}
+.la-ball-fall > div:nth-child(3) {
+  -webkit-animation-delay: 0ms;
+  -moz-animation-delay: 0ms;
+  -o-animation-delay: 0ms;
+  animation-delay: 0ms;
+}
+.la-ball-fall.la-sm {
+  width: 26px;
+  height: 8px;
+}
+.la-ball-fall.la-sm > div {
+  width: 4px;
+  height: 4px;
+  margin: 2px;
+}
+.la-ball-fall.la-2x {
+  width: 108px;
+  height: 36px;
+}
+.la-ball-fall.la-2x > div {
+  width: 20px;
+  height: 20px;
+  margin: 8px;
+}
+.la-ball-fall.la-3x {
+  width: 162px;
+  height: 54px;
+}
+.la-ball-fall.la-3x > div {
+  width: 30px;
+  height: 30px;
+  margin: 12px;
+}
+/*
+ * Animation
+ */
+@-webkit-keyframes ball-fall {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-145%);
+    transform: translateY(-145%);
+  }
+  10% {
+    opacity: .5;
+  }
+  20% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  90% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(145%);
+    transform: translateY(145%);
+  }
+}
+@-moz-keyframes ball-fall {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(-145%);
+    transform: translateY(-145%);
+  }
+  10% {
+    opacity: .5;
+  }
+  20% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  90% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 0;
+    -moz-transform: translateY(145%);
+    transform: translateY(145%);
+  }
+}
+@-o-keyframes ball-fall {
+  0% {
+    opacity: 0;
+    -o-transform: translateY(-145%);
+    transform: translateY(-145%);
+  }
+  10% {
+    opacity: .5;
+  }
+  20% {
+    opacity: 1;
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 1;
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+  90% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 0;
+    -o-transform: translateY(145%);
+    transform: translateY(145%);
+  }
+}
+@keyframes ball-fall {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-145%);
+    -moz-transform: translateY(-145%);
+    -o-transform: translateY(-145%);
+    transform: translateY(-145%);
+  }
+  10% {
+    opacity: .5;
+  }
+  20% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+  90% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(145%);
+    -moz-transform: translateY(145%);
+    -o-transform: translateY(145%);
+    transform: translateY(145%);
+  }
+}
+</style> 
+  <style>
+@-webkit-keyframes flames {
+  0% {
+    height: 2.2em;
+    -webkit-transform: rotate(0.5deg);
+            transform: rotate(0.5deg);
+    opacity: 1.8;
+  }
+  100% {
+    height: 2.5em;
+    -webkit-transform: rotate(-0.5deg);
+            transform: rotate(-0.5deg);
+    border-radius: 50% / 30%;
+    border-top-right-radius: 50% 60%;
+    border-top-left-radius: 50% 60%;
+    opacity: 1;
+  }
+}
+
+@keyframes flames {
+  0% {
+    height: 2.2em;
+    -webkit-transform: rotate(0.5deg);
+            transform: rotate(0.5deg);
+    opacity: 0.8;
+  }
+  100% {
+    height: 2.5em;
+    -webkit-transform: rotate(-0.5deg);
+            transform: rotate(-0.5deg);
+    border-radius: 50% / 30%;
+    border-top-right-radius: 50% 60%;
+    border-top-left-radius: 50% 60%;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes candles {
+  0% {
+    height: 10em;
+    border-radius: 50% / 5%;
+  }
+  100% {
+    height: 2em;
+    border-radius: 50% / 25%;
+display: none;
+  }
+}
+@keyframes candles {
+  0% {
+    height: 10em;
+    border-radius: 50% / 5%;
+  }
+  100% {
+    height: 2em;
+    border-radius: 50% / 25%;
+display: none;
+  }
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+p {
+  text-align: center;
+  padding: 2em;
+  font-size: 16px;
+}
+
+a {
+  color: inherit;
+  background: #ffffcc;
+  text-decoration: none;
+}
+
+.title {
+  text-align: center;
+  font-size: 3em;
+}
+
+.cake {
+  height: 30em;
+  width: 30em;
+  margin: 10em auto 0;
+  position: relative;
+  border-radius: 100% / 50%;
+  background: #7b3d11;
+  border-bottom: 0.25em solid #2d1606;
+}
+.cake::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 15em;
+  border-radius: 50%;
+  background: url("img/3a.png");
+  border-bottom: 0.5em solid #221105;
+  z-index: 10;
+}
+.cake::after {
+  content: '';
+  position: absolute;
+  top: 7em;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 15em;
+  border-radius: 50%;
+  border-top-right-radius: 25%;
+  border-top-left-radius: 25%;
+  background: #864313;
+  box-shadow: 0 5em 0 #ffffcc, 0 10em 0 #2d1606;
+}
+
+.candles {
+  z-index: 20;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  height: 10em;
+  width: 2.5em;
+  position: absolute;
+  bottom: 22.5em;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border-radius: 50% / 5%;
+  -webkit-animation: candles 10s 2s 2 alternate;
+          animation: candles 10s 2s 2 alternate;
+  background: #ffcc00;
+  box-shadow: -3.5em 5em 0 0 #77DD77, 3.5em 5em 0 0 #FF6961, -7em -2.5em 0 -3px #FFB347, 7em -2.5em 0 -3px #779ECB, -10.5em 2em 0 -1px #B19CD9, 10.5em 2em 0 -1px #A5D3CA;
+}
+.candles::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 15px;
+  border-radius: 50%;
+  background: #cca300;
+  box-shadow: -3.5em 5em 0 0 #4ed34e, 3.5em 5em 0 0 #ff392e, -7em -2.5em 0 -3px #ff9e14, 7em -2.5em 0 -3px #5284bd, -10.5em 2em 0 -1px #9477cb, 10.5em 2em 0 -1px #83c2b6;
+}
+.candles::after {
+  content: '';
+  position: absolute;
+  top: -2em;
+  right: 0;
+  left: 0;
+  margin: auto;
+  border-radius: 50% / 40%;
+  border-top-right-radius: 50% 60%;
+  border-top-left-radius: 50% 60%;
+  background: #E29822;
+  height: 2.5em;
+  width: 1.5em;
+  -webkit-animation: flames 0.5s infinite alternate;
+          animation: flames 0.5s infinite alternate;
+  box-shadow: 0 0 0 1px #e8ad4f, -3.5em 5em 1px 0 #E29822, 3.5em 5em 1px 0 #E29822, -7em -2.5em 1px 0 #E29822, 7em -2.5em 1px 0 #E29822, -10.5em 2em 1px 0 #E29822, 10.5em 2em 1px 0 #E29822;
+}
+
+/* Balloon */
+ .dialog-birthday_message {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 5%;
+  z-index: -1;   
+  width: 100%;
+  height:auto;
+    -webkit-transform: none;
+    margin: auto;
+}
+.birthday_container {
+  position: relative;
+  margin: 0 auto;  
+  width: 100%;
+  height:100%;
+  display: block;
+  background:transparent;
+  overflow: hidden;
+}
+.balloons {
+  z-index:1;
+  position:fixed;
+  left: 38%;
+
+}
+.birthday_container h1 {
+  z-index:1;
+  position:absolute;
+  bottom:40px;
+  font-weight: 500;
+  font-size: 28px;
+ margin:0 auto;
+  width:100%;
+  text-align:center;
+}.birthday_container small {
+  z-index:1;
+  position:absolute;
+  bottom:70px;
+  font-weight: 500;
+  font-size: 18px;
+ margin:0 auto;
+  width:100%;
+  text-align:center;
+}.birthday_container p {
+  z-index:1;
+  position:absolute;
+  bottom:70px;
+  font-weight: 500;
+  font-size: 18px;
+ margin:0 auto;
+  width:100%;
+  text-align:center;
+}
+#canvas_confetti {
+  display:inline-block;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index:0;
+  width: 100%;
+  height: 100%;
+}
+.balloon {
+  display: inline-block;
+  width: 50px;
+  height: 60px;
+  background: hsl(215, 50%, 65%);
+  background: rgba(102, 145, 204,1);
+  color: #f7fcfd;
+  border-radius: 80%;
+  text-align: center;
+  position: relative;
+  box-shadow: inset -10px -10px 0 rgba(0, 0, 0, 0.07);  
+  margin: 10px 1px;
+  transition: transform 0.5s ease;
+  z-index: 2;
+  animation: balloons 4s ease-in-out infinite;
+  transform-origin: bottom center;
+  line-height: 60px;
+}
+
+@keyframes balloons {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-4deg);
+  }
+  50% {
+    transform: translateY(-25px) rotate(4deg);
+  }
+}
+
+.balloon:after { 
+  content: ""; 
+  display: inline-block;
+  top: 65px;
+  position: absolute;
+  height: 100px;
+  width: 2px;
+  margin: 0 auto;
+  left:24px;
+  background: rgba(255, 255, 255, 0.42);
+}
+
+.ballon:nth-child(1) {
+  box-shadow: inset -10px -10px 0 rgba(88, 125, 176,1);
+}
+.balloon:nth-child(2) {
+  background: hsl(245, 40%, 65%);
+  animation-duration: 3.5s;
+}
+
+.balloon:nth-child(2):before {
+  color: hsl(245, 40%, 65%);
+}
+
+.balloon:nth-child(3) {
+  background: hsl(139, 50%, 60%);
+  animation-duration: 3s;
+}
+
+.balloon:nth-child(3):before {
+  color: hsl(139, 30%, 50%);
+}
+
+.balloon:nth-child(4) {
+  background: hsl(59, 50%, 58%);
+  animation-duration: 4.5s;
+}
+
+.balloon:nth-child(4):before {
+  color: hsl(59, 30%, 52%);
+}
+
+.balloon:nth-child(5) {
+  background: hsl(23, 55%, 57%);
+  animation-duration: 5s;
+}
+
+.balloon:nth-child(5):before {
+  color: hsl(23, 44%, 46%);
+}
+canvas {
+  width: 100%;
+  height: auto;
+}
+.img-responsive{
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 4px;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius:50%;
+}
+
+
+
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  font-weight: 400;
+  margin: 0;
+  font-size: 16px;
+  white-space: nowrap;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+@media (min-width: 37.5em) {
+  h1 {
+    font-size: 64px;
+  }
+}
+h1 span {
+  display: inline-block;
+  margin: 0 4px;
+  -webkit-animation: 2s ease-in-out infinite move;
+          animation: 2s ease-in-out infinite move;
+}
+h1 span:nth-child(1) {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+h1 span:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+h1 span:nth-child(3) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+h1 span:nth-child(4) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+h1 span:nth-child(5) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+h1 span:nth-child(6) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+h1 span:nth-child(7) {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+h1 span:nth-child(8) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+h1 span:nth-child(9) {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+h1 span:nth-child(10) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+h1 span:nth-child(11) {
+  -webkit-animation-delay: 1.1s;
+          animation-delay: 1.1s;
+}
+h1 span:nth-child(12) {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+h1 span:nth-child(13) {
+  -webkit-animation-delay: 1.3s;
+          animation-delay: 1.3s;
+}
+h1 span:nth-child(14) {
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+}
+
+@-webkit-keyframes move {
+  50% {
+    -webkit-transform: translate(0, -20px);
+            transform: translate(0, -20px);
+  }
+}
+
+@keyframes move {
+  50% {
+    -webkit-transform: translate(0, -20px);
+            transform: translate(0, -20px);
+  }
+}
+.fa {
+  color: red;
+  opacity: .3;
+  -webkit-animation: 1s ease grow infinite;
+          animation: 1s ease grow infinite;
+}
+body .fa:nth-child(1) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+body .fa:nth-child(2) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+body .fa:nth-child(3) {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+body .fa:nth-child(4) {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+body .fa:nth-child(5) {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+body .fa:nth-child(6) {
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+}
+body .fa:nth-child(7) {
+  -webkit-animation-delay: 2.1s;
+          animation-delay: 2.1s;
+}
+body .fa:nth-child(8) {
+  -webkit-animation-delay: 2.4s;
+          animation-delay: 2.4s;
+}
+body .fa:nth-child(9) {
+  -webkit-animation-delay: 2.7s;
+          animation-delay: 2.7s;
+}
+body .fa:nth-child(10) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+body .fa:nth-child(11) {
+  -webkit-animation-delay: 3.3s;
+          animation-delay: 3.3s;
+}
+body .fa:nth-child(12) {
+  -webkit-animation-delay: 3.6s;
+          animation-delay: 3.6s;
+}
+body .fa:nth-child(13) {
+  -webkit-animation-delay: 3.9s;
+          animation-delay: 3.9s;
+}
+body .fa:nth-child(14) {
+  -webkit-animation-delay: 4.2s;
+          animation-delay: 4.2s;
+}
+body .fa:nth-child(15) {
+  -webkit-animation-delay: 4.5s;
+          animation-delay: 4.5s;
+}
+body .fa:nth-child(16) {
+  -webkit-animation-delay: 4.8s;
+          animation-delay: 4.8s;
+}
+body .fa:nth-child(17) {
+  -webkit-animation-delay: 5.1s;
+          animation-delay: 5.1s;
+}
+body .fa:nth-child(18) {
+  -webkit-animation-delay: 5.4s;
+          animation-delay: 5.4s;
+}
+body .fa:nth-child(19) {
+  -webkit-animation-delay: 5.7s;
+          animation-delay: 5.7s;
+}
+body .fa:nth-child(20) {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+body .fa:nth-child(21) {
+  -webkit-animation-delay: 6.3s;
+          animation-delay: 6.3s;
+}
+body .fa:nth-child(22) {
+  -webkit-animation-delay: 6.6s;
+          animation-delay: 6.6s;
+}
+body .fa:nth-child(23) {
+  -webkit-animation-delay: 6.9s;
+          animation-delay: 6.9s;
+}
+body .fa:nth-child(24) {
+  -webkit-animation-delay: 7.2s;
+          animation-delay: 7.2s;
+}
+body .fa:nth-child(25) {
+  -webkit-animation-delay: 7.5s;
+          animation-delay: 7.5s;
+}
+body .fa:nth-child(26) {
+  -webkit-animation-delay: 7.8s;
+          animation-delay: 7.8s;
+}
+body .fa:nth-child(27) {
+  -webkit-animation-delay: 8.1s;
+          animation-delay: 8.1s;
+}
+body .fa:nth-child(28) {
+  -webkit-animation-delay: 8.4s;
+          animation-delay: 8.4s;
+}
+body .fa:nth-child(29) {
+  -webkit-animation-delay: 8.7s;
+          animation-delay: 8.7s;
+}
+body .fa:nth-child(30) {
+  -webkit-animation-delay: 9s;
+          animation-delay: 9s;
+}
+body .fa:nth-child(31) {
+  -webkit-animation-delay: 9.3s;
+          animation-delay: 9.3s;
+}
+body .fa:nth-child(32) {
+  -webkit-animation-delay: 9.6s;
+          animation-delay: 9.6s;
+}
+body .fa:nth-child(33) {
+  -webkit-animation-delay: 9.9s;
+          animation-delay: 9.9s;
+}
+body .fa:nth-child(34) {
+  -webkit-animation-delay: 10.2s;
+          animation-delay: 10.2s;
+}
+body .fa:nth-child(35) {
+  -webkit-animation-delay: 10.5s;
+          animation-delay: 10.5s;
+}
+body .fa:nth-child(36) {
+  -webkit-animation-delay: 10.8s;
+          animation-delay: 10.8s;
+}
+body .fa:nth-child(37) {
+  -webkit-animation-delay: 11.1s;
+          animation-delay: 11.1s;
+}
+body .fa:nth-child(38) {
+  -webkit-animation-delay: 11.4s;
+          animation-delay: 11.4s;
+}
+body .fa:nth-child(39) {
+  -webkit-animation-delay: 11.7s;
+          animation-delay: 11.7s;
+}
+body .fa:nth-child(40) {
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
+}
+body .fa:nth-child(41) {
+  -webkit-animation-delay: 12.3s;
+          animation-delay: 12.3s;
+}
+body .fa:nth-child(42) {
+  -webkit-animation-delay: 12.6s;
+          animation-delay: 12.6s;
+}
+body .fa:nth-child(43) {
+  -webkit-animation-delay: 12.9s;
+          animation-delay: 12.9s;
+}
+body .fa:nth-child(44) {
+  -webkit-animation-delay: 13.2s;
+          animation-delay: 13.2s;
+}
+body .fa:nth-child(45) {
+  -webkit-animation-delay: 13.5s;
+          animation-delay: 13.5s;
+}
+body .fa:nth-child(46) {
+  -webkit-animation-delay: 13.8s;
+          animation-delay: 13.8s;
+}
+body .fa:nth-child(47) {
+  -webkit-animation-delay: 14.1s;
+          animation-delay: 14.1s;
+}
+body .fa:nth-child(48) {
+  -webkit-animation-delay: 14.4s;
+          animation-delay: 14.4s;
+}
+body .fa:nth-child(49) {
+  -webkit-animation-delay: 14.7s;
+          animation-delay: 14.7s;
+}
+body .fa:nth-child(50) {
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+}
+
+@-webkit-keyframes grow {
+  50% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+}
+
+@keyframes grow {
+  50% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+}
+
+  
+</style> 
+  <!-- Bắt đầu viết Css cho web --> 
+  <style id="page-skin-1" type="text/css"><!--
+body {
+margin: 0;
+background: #020202;
+cursor: crosshair;
+color: #fff;
+}
+.showSweetAlert h2 {color:#000}
+
+--></style> 
+  <meta name="google-adsense-platform-account" content="ca-host-pub-1556223355139109"> 
+  <meta name="google-adsense-platform-domain" content="blogspot.com"> 
+ </head> 
+ <!-- Bắt đầu phần hiển thị trên web --> 
+ <body> 
+  <div class="dialog-birthday_message"> 
+   <div class="birthday_container" id="birthday_container"> 
+    <div class="balloons"> 
+     <div class="balloon">
+      H
+     </div> 
+     <div class="balloon">
+      B
+     </div> 
+     <div class="balloon">
+      D
+     </div> 
+     <div class="balloon">
+      A
+     </div> 
+     <div class="balloon">
+      Y
+     </div> 
+    </div> 
+    <h1 id="text1"></h1> 
+    <hr> 
+    <small> Make with <i class="fa fa-heart text-danger" style="margin:0 5px"></i> by Lê Anh Đức</small> 
+    <p id="txt"></p> 
+    <canvas id="canvas_confetti"></canvas> 
+    <canvas id="birthday"></canvas> 
+   </div> 
+  </div> 
+  <img alt="" class="img img-responsive img-circle" id="avt" src="https://graph.facebook.com/100006797320542/picture?type=large" style="max-width: 150px"> 
+  <div class="no-items section" id="widget"></div> 
+  <script>
+const PI2 = Math.PI * 2
+let random = (min, max) => Math.random() * (max - min + 1) + min | 0
+
+class Birthday {
+  constructor() {
+    this.resize()
+
+    // create a lovely place to store the firework
+    this.fireworks = []
+    this.counter = 0
+
+  }
+  resize() {
+    this.width = canvas.width = window.innerWidth
+    let center = this.width / 2 | 0
+    this.spawnA = center - center / 4 | 0
+    this.spawnB = center + center / 4 | 0
+    
+    this.height = canvas.height = window.innerHeight
+    this.spawnC = this.height * .1
+    this.spawnD = this.height * .5
+    
+  }
+  onClick(evt) {
+     let x = evt.clientX || evt.touches && evt.touches[0].pageX
+     let y = evt.clientY || evt.touches && evt.touches[0].pageY
+     
+     let count = random(3,5)
+     for(let i = 0; i < count; i++) this.fireworks.push(new Firework(
+        random(this.spawnA, this.spawnB),
+        this.height,
+        x,
+        y,
+        random(300, 450),
+        random(30, 110)))
+          
+     this.counter = -30
+     
+  }
+  update() {
+    ctx.globalCompositeOperation = 'hard-light'
+    ctx.fillStyle = 'rgba(20,20,20,0.15)'
+    ctx.fillRect(0, 0, this.width, this.height)
+
+    ctx.globalCompositeOperation = 'lighter'
+    for (let firework of this.fireworks) firework.update()
+
+    // if enough time passed... create new new firework
+    if (++this.counter === 15) {
+      this.fireworks.push(new Firework(
+        random(this.spawnA, this.spawnB),
+        this.height,
+        random(0, this.width),
+        random(this.spawnC, this.spawnD),
+        random(300, 450),
+        random(30, 110)))
+      this.counter = 0
+    }
+
+    // remove the dead fireworks
+    if (this.fireworks.length > 1000) this.fireworks = this.fireworks.filter(firework => !firework.dead)
+
+  }
+}
+
+class Firework {
+  constructor(x, y, targetX, targetY, shade, offsprings) {
+    this.dead = false
+    this.offsprings = offsprings
+
+    this.x = x
+    this.y = y
+    this.targetX = targetX
+    this.targetY = targetY
+
+    this.shade = shade
+    this.history = []
+  }
+  update() {
+    if (this.dead) return;
+
+    let xDiff = this.targetX - this.x
+    let yDiff = this.targetY - this.y
+    if (Math.abs(xDiff) > 3 || Math.abs(yDiff) > 3) { // is still moving
+      this.x += xDiff / 20
+      this.y += yDiff / 20
+
+      this.history.push({
+        x: this.x,
+        y: this.y
+      })
+
+      if (this.history.length > 20) this.history.shift()
+
+    } else {
+      if (this.offsprings && !this.madeChilds) {
+        
+        let babies = this.offsprings / 2;
+        for (let i = 0; i < babies; i++) {
+          let targetX = this.x + this.offsprings * Math.cos(PI2 * i / babies) | 0
+          let targetY = this.y + this.offsprings * Math.sin(PI2 * i / babies) | 0
+
+          birthday.fireworks.push(new Firework(this.x, this.y, targetX, targetY, this.shade, 0))
+
+        }
+
+      }
+      this.madeChilds = true
+      this.history.shift()
+    }
+    
+    if (this.history.length === 0) this.dead = true
+    else if (this.offsprings) { 
+        for (let i = 0; this.history.length > i; i++) {
+          let point = this.history[i]
+          ctx.beginPath()
+          ctx.fillStyle = 'hsl(' + this.shade + ',100%,' + i + '%)'
+          ctx.arc(point.x, point.y, 1, 0, PI2, false)
+          ctx.fill()
+        } 
+      } else {
+      ctx.beginPath()
+      ctx.fillStyle = 'hsl(' + this.shade + ',100%,50%)'
+      ctx.arc(this.x, this.y, 1, 0, PI2, false)
+      ctx.fill()
+    }
+
+  }
+}
+
+let canvas = document.getElementById('birthday')
+let ctx = canvas.getContext('2d')
+
+let birthday = new Birthday
+window.onresize = () => birthday.resize()
+document.onclick = evt => birthday.onClick(evt)
+document.ontouchstart = evt => birthday.onClick(evt)
+
+;(function update() {
+  requestAnimationFrame(update)
+  birthday.update()
+
+}())</script> 
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script> 
+  <script src="https://lipis.github.io/bootstrap-sweetalert/dist/sweetalert.js"></script> 
+  <script src="https://mattboldt.com/demos/typed-js/js/typed.custom.js"></script> 
+  <script>
+//<![CDATA[
+function tom_orion(){
+
+setTimeout(function(){
+
+
+swal({  
+
+ title: "Bạn nhận được một món quà !",   
+text: "Lê Anh Đức vừa gửi bạn một món quà đặc biệt nhân ngày sinh nhật của bạn ", 
+ imageUrl: "https://i.imgur.com/yO79H6R.png",
+  showCancelButton: true,
+   confirmButtonColor: "#DD6B55", 
+  confirmButtonText: "Nhận quà ngay",
+   cancelButtonText: "Không cần, cám ơn.", 
+  closeOnConfirm: false,  
+ closeOnCancel: false }, 
+function(isConfirm){  
+ if (isConfirm) {   
+ 
+
+swal({  
+ title: "Bạn có phải là Nguyễn Thị Hạnh không ? ", 
+  text: "Nhập mã xác nhận ",  
+ type: "input",  
+ showCancelButton: true,  
+ closeOnConfirm: false,   
+ showLoaderOnConfirm: true,
+animation: "slide-from-top",  
+ inputPlaceholder: "Mã xác nhận là gì ? (emyeuanh) " },
+ function(inputValue){   
+if (inputValue === false) return false;   
+   if (inputValue !== "emyeuanh") {   
+  swal.showInputError("Nhập sai rồi kìa :) ");   
+  return false   }   
+ 
+setTimeout(function(){
+
+
+swal({  
+ title: "Nhập tên món quà nào đó ", 
+  text: "Bạn muốn nhận quà gì nào ? ",  
+ type: "input",  
+ showCancelButton: true,  
+ closeOnConfirm: false,   
+animation: "slide-from-top",  
+
+ inputPlaceholder: "Nhẫn, Hoa hồng, Xe SH, Iphone XSMax,... " },
+ function(inputValue){   
+if (inputValue === false) return false;   
+   if (inputValue === "") {   
+  swal.showInputError("Không thể để trống được ");   
+  return false   }  
+ swal("OK ! ", "Món quà : " + inputValue + " sẽ tặng cho Nguyễn Thị Hạnh trong 10s nữa hãy đợi nhé. Chúc một ngày sinh nhật thật vui vẻ nhé ^-^ ", "success"); });
+
+
+},3000);
+
+
+
+});
+
+ }
+else {   
+  swal("KHÔNG NHẬN ", "Bạn vừa từ chối món quà từ Lê Anh Đức. Ấn F5 nếu muốn nhận lại quà =)) ", "error"); 
+
+  } });
+
+
+
+},8000);
+}
+tom_orion();
+//]]>
+</script> 
+  <script>
+//<![CDATA[
+          //Setup canvas by creating in doc
+        var canvas = document.getElementById('canvas_confetti');
+        var context = canvas.getContext('2d');
+        canvas.width = document.getElementById('birthday_container').clientWidth;
+        canvas.height = document.getElementById('birthday_container').clientHeight;
+        //document.body.appendChild(canvas);
+ document.getElementById('birthday_container').appendChild(canvas);
+        var calculatedDensity = canvas.width * 0.0085;
+        var calculatedVelocity = canvas.width * 0.0037;
+        var calculatedLife = canvas.height * .65;
+        var calculatedStartingX = canvas.width / 2;
+
+
+        //Generating many particles
+        //Make object with settings for function
+        var particles = {},
+            particleIndex = 0,
+            settings = {
+                density: calculatedDensity,
+                particleSize: 8,
+                particleSizeVariety: 1.5,
+                startingX: calculatedStartingX,
+                startingY: -20,
+                velX: calculatedVelocity,
+                velY:2,
+                gravity: 0.015,
+                //maxLife: 300,
+                maxLife: calculatedLife,
+                particleColours: ["#F06292","#BA68C8","#64B5F6","#4DD0E1","#81C784","#DCE775","#FFD54F","#FF8A65","#EEEEEE"]
+            };
+
+        //Function that will create particles
+        function Particle() {
+            //Starting positions and velocities
+            this.x = settings.startingX;
+            this.y = settings.startingY;
+            //Random X and Y velocities
+            this.vx = (Math.random() * (settings.velX)) - (settings.velX/2);
+            this.vy = (Math.random() * (settings.velY)) - (settings.velY/2);
+            //this.vx = 10;
+            //this.vy = 10;
+
+            //Set up rotation & center of origin
+            this.rot = 0;
+            this.centerOfOriginX = -this.particleSize/2;
+            this.centerOfOriginY = -this.particleSize/4;
+
+            this.particleSize = parseInt((Math.random()*(settings.particleSizeVariety*2)) + settings.particleSize);
+
+            //Choose a random colour
+            this.particleColor = settings.particleColours[parseInt(Math.random()*settings.particleColours.length)];
+
+            //Add new particle to index - this is a way to store the particles created
+            particleIndex++;
+            particles[particleIndex] = this;
+            this.id = particleIndex;
+            //Will be used later to remove particle
+            this.life = -10 + parseInt(Math.random()*20);
+        }
+
+        //Add a 'draw' method to the Particle function
+        Particle.prototype.draw = function() {
+
+            this.x += this.vx;
+            this.y += this.vy;
+
+            //calculate rotation
+            var period = 100;
+            this.rot += Math.sin(this.life * 2 * Math.PI / period)/2 * (Math.random()*2);
+
+            //Add gravity
+            this.vy += settings.gravity;
+
+            //Age the particle by adding to 'life'
+            this.life++;
+
+            //Remove the particle if it's old
+            if (this.life >= settings.maxLife) {
+                delete particles[this.id];
+            }
+
+            //Create shape
+            context.clearRect(0, settings.groundLevel, canvas.width, canvas.height);
+            context.beginPath();
+            context.fillStyle = this.particleColor;
+            //save context position
+            context.save();
+            context.translate(this.x,this.y);
+
+            var rotationAmount = 5;
+            //rotate by sine value
+            context.rotate(this.rot/rotationAmount);
+
+            //translate to near random center of origin
+            context.translate(this.centerOfOriginX,this.centerOfOriginY);
+            //context.translate(0,0);
+
+            context.globalAlpha = 0.9;
+            context.fillRect(0,0,this.particleSize,this.particleSize/2);
+            context.restore();
+        }
+
+        //Set up interval to draw particles
+        setInterval(function() {
+            //Fillstyle transparency adds motion trails
+            //#673AB7 purple
+            //#2196F3 blue
+            //#009688 teal
+            //#FFEB3B yellow
+            // "rgba(39,174,96,.98)"; green
+            context.fillStyle = '#f7fcfd'
+            context.fillRect(0, 0, canvas.width, canvas.height);
+
+            // Draw the particles
+            for (var i = 0; i < settings.density; i++) {
+                // Random chance of creating a particle corresponding to an chance of 1 per second per "density" value
+                if (Math.random() > 0.97) {
+                  new Particle();
+                }
+            }
+
+            //Use the draw method for all the particles in particles[]
+            for (var i in particles) {
+              particles[i].draw();
+            }
+        }, 16);
+        
+        
+        
+        
+        
+          $('h1').lettering();
+
+var WIN_WIDTH = window.innerWidth;
+var WIN_HEIGHT = window.innerHeight;
+
+for (var i = 0; i < 50; i++) {if (window.CP.shouldStopExecution(1)){break;}if (window.CP.shouldStopExecution(1)){break;}
+  var heart = createHeart();
+  document.body.appendChild(heart);
+}
+window.CP.exitedLoop(1);
+
+window.CP.exitedLoop(1);
+
+
+function createHeart() {
+  var heart = document.createElement('span');
+  heart.classList.add('fa', 'fa-fw', 'fa-heart');
+  heart.style.position = 'absolute';
+  heart.style.display = 'block';
+  heart.style.top = Math.random() * WIN_HEIGHT + 'px';
+  heart.style.left = Math.random() * WIN_WIDTH + 'px';
+
+  return heart;
+}
+
+
+  $( document ).ready(function() {
+
+    var c=document.getElementById("canvas_confetti");
+    var ctx=c.getContext("2d");
+    ctx.beginPath();
+    ctx.arc(95,50,40,0,2*Math.PI);
+    ctx.stroke();
+
+});
+//]]>
+</script> 
+  <script>
+  $(function(){
+
+    $("#txt").typed({
+      strings: ["Happy Birthday Nguyen Thi Hanh (05-05-2001)" ,"Have a happy birthday!","Good luck in life! ","Best wishes for you !"],
+      typeSpeed: 30,
+      smartBackspace: true
+    });
+
+  });
+</script> 
+  <div class="navbar no-items section" id="navbar"></div> 
+  <script type="text/javascript">
+//<![CDATA[
+!function(e,t,a){function n(){c(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"),o(),r()}function r(){for(var e=0;e<d.length;e++)d[e].alpha<=0?(t.body.removeChild(d[e].el),d.splice(e,1)):(d[e].y--,d[e].scale+=.004,d[e].alpha-=.013,d[e].el.style.cssText="left:"+d[e].x+"px;top:"+d[e].y+"px;opacity:"+d[e].alpha+";transform:scale("+d[e].scale+","+d[e].scale+") rotate(45deg);background:"+d[e].color+";z-index:99999");requestAnimationFrame(r)}function o(){var t="function"==typeof e.onclick&&e.onclick;e.onclick=function(e){t&&t(),i(e)}}function i(e){var a=t.createElement("div");a.className="heart",d.push({el:a,x:e.clientX-5,y:e.clientY-5,scale:1,alpha:1,color:s()}),t.body.appendChild(a)}function c(e){var a=t.createElement("style");a.type="text/css";try{a.appendChild(t.createTextNode(e))}catch(t){a.styleSheet.cssText=e}t.getElementsByTagName("head")[0].appendChild(a)}function s(){return"rgb("+~~(255*Math.random())+","+~~(255*Math.random())+","+~~(255*Math.random())+")"}var d=[];e.requestAnimationFrame=function(){return e.requestAnimationFrame||e.webkitRequestAnimationFrame||e.mozRequestAnimationFrame||e.oRequestAnimationFrame||e.msRequestAnimationFrame||function(e){setTimeout(e,1e3/60)}}(),n()}(window,document);
+//]]>
+</script> 
+  <style>
+html,body{cursor:url("https://i.imgur.com/5v5M8gh.png"), auto;}
+a:hover{cursor:url("https://i.imgur.com/IXULuQ1.png"), auto;}
+</style> 
+  <script type="text/javascript" src="https://www.blogger.com/static/v1/widgets/807375071-widgets.js"></script> 
+  <script type="text/javascript">
+window['__wavt'] = 'AOuZoY6SW44ag-KupXBDskdBe12w8tZj3w:1634536575050';_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d3337853618721128830','//leanhducf83.blogspot.com/','3337853618721128830');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '3337853618721128830', 'title': 'L\xca ANH \u0110\u1ee8C F83 | CH\xdaC M\u1eeaNG SINH NH\u1eacT (DARK MODE)', 'url': 'https://leanhducf83.blogspot.com/', 'canonicalUrl': 'https://leanhducf83.blogspot.com/', 'homepageUrl': 'https://leanhducf83.blogspot.com/', 'searchUrl': 'https://leanhducf83.blogspot.com/search', 'canonicalHomepageUrl': 'https://leanhducf83.blogspot.com/', 'blogspotFaviconUrl': 'https://leanhducf83.blogspot.com/favicon.ico', 'bloggerUrl': 'https://www.blogger.com', 'hasCustomDomain': false, 'httpsEnabled': true, 'enabledCommentProfileImages': true, 'gPlusViewType': 'FILTERED_POSTMOD', 'adultContent': false, 'analyticsAccountNumber': '', 'encoding': 'UTF-8', 'locale': 'vi', 'localeUnderscoreDelimited': 'vi', 'languageDirection': 'ltr', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': true, 'mobileClass': '', 'isPrivateBlog': false, 'isDynamicViewsAvailable': true, 'feedLinks': '\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22L\xca ANH \u0110\u1ee8C F83 | CH\xdaC M\u1eeaNG SINH NH\u1eacT (DARK MODE) - Atom\x22 href\x3d\x22https://leanhducf83.blogspot.com/feeds/posts/default\x22 /\x3e\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/rss+xml\x22 title\x3d\x22L\xca ANH \u0110\u1ee8C F83 | CH\xdaC M\u1eeaNG SINH NH\u1eacT (DARK MODE) - RSS\x22 href\x3d\x22https://leanhducf83.blogspot.com/feeds/posts/default?alt\x3drss\x22 /\x3e\n\x3clink rel\x3d\x22service.post\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22L\xca ANH \u0110\u1ee8C F83 | CH\xdaC M\u1eeaNG SINH NH\u1eacT (DARK MODE) - Atom\x22 href\x3d\x22https://www.blogger.com/feeds/3337853618721128830/posts/default\x22 /\x3e\n', 'meTag': '\x3clink rel\x3d\x22me\x22 href\x3d\x22https://www.blogger.com/profile/05281490033070392414\x22 /\x3e\n', 'adsenseHostId': 'ca-host-pub-1556223355139109', 'adsenseHasAds': false, 'adsenseAutoAds': false, 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/afa2214c2f1466ab', 'plusOneApiSrc': 'https://apis.google.com/js/plusone.js', 'disableGComments': true, 'sharing': {'platforms': [{'name': 'Nh\u1eadn \u0111\u01b0\u1eddng li\xean k\u1ebft', 'key': 'link', 'shareMessage': 'Nh\u1eadn \u0111\u01b0\u1eddng li\xean k\u1ebft', 'target': ''}, {'name': 'Facebook', 'key': 'facebook', 'shareMessage': 'Chia s\u1ebb v\u1edbi Facebook', 'target': 'facebook'}, {'name': 'BlogThis!', 'key': 'blogThis', 'shareMessage': 'BlogThis!', 'target': 'blog'}, {'name': 'Twitter', 'key': 'twitter', 'shareMessage': 'Chia s\u1ebb v\u1edbi Twitter', 'target': 'twitter'}, {'name': 'Pinterest', 'key': 'pinterest', 'shareMessage': 'Chia s\u1ebb v\u1edbi Pinterest', 'target': 'pinterest'}, {'name': 'Email', 'key': 'email', 'shareMessage': 'Email', 'target': 'email'}], 'disableGooglePlus': true, 'googlePlusShareButtonWidth': 0, 'googlePlusBootstrap': '\x3cscript type\x3d\x22text/javascript\x22\x3ewindow.___gcfg \x3d {\x27lang\x27: \x27vi\x27};\x3c/script\x3e'}, 'hasCustomJumpLinkMessage': false, 'jumpLinkMessage': '\u0110\u1ecdc th\xeam', 'pageType': 'index', 'pageName': '', 'pageTitle': 'L\xca ANH \u0110\u1ee8C F83 | CH\xdaC M\u1eeaNG SINH NH\u1eacT (DARK MODE)'}}, {'name': 'features', 'data': {'sharing_get_link_dialog': 'true', 'sharing_native': 'false'}}, {'name': 'messages', 'data': {'edit': 'Ch\u1ec9nh s\u1eeda', 'linkCopiedToClipboard': '\u0110\xe3 sao ch\xe9p \u0111\u01b0\u1eddng li\xean k\u1ebft v\xe0o b\u1ea3ng nh\u1edb t\u1ea1m!', 'ok': 'Ok', 'postLink': 'Li\xean k\u1ebft b\xe0i \u0111\u0103ng'}}, {'name': 'template', 'data': {'name': 'custom', 'localizedName': 'T\xf9y ch\u1ec9nh', 'isResponsive': false, 'isAlternateRendering': false, 'isCustom': true}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\x3dclassic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\x3dflipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\x3dmagazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\x3dmosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\x3dsidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\x3dsnapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\x3dtimeslide'}, 'isMobile': false, 'title': 'L\xca ANH \u0110\u1ee8C F83 | CH\xdaC M\u1eeaNG SINH NH\u1eacT (DARK MODE)', 'description': '', 'url': 'https://leanhducf83.blogspot.com/', 'type': 'feed', 'isSingleItem': false, 'isMultipleItems': true, 'isError': false, 'isPage': false, 'isPost': false, 'isHomepage': true, 'isArchive': false, 'isLabelSearch': false}}]);
+</script>  
+  <!-- Kết thúc phần hiển thị trên web -->  
+ </body>
+</html>
